@@ -1,0 +1,10 @@
+bert4keras==0.9.3
+fairseq==0.10.0
+Keras==2.3.1
+keras_bert==0.83.0
+numpy==1.19.1
+regex==2020.7.14
+scikit_learn==1.1.0
+tensorflow==1.14.0
+torch==1.6.0
+transformers==3.0.0

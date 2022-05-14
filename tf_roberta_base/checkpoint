@@ -1,0 +1,2 @@
+model_checkpoint_path: "tf_roberta_base.ckpt"
+all_model_checkpoint_paths: "tf_roberta_base.ckpt"
