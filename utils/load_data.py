@@ -15,13 +15,13 @@ def read_model_data(file_path):
     for i, line in enumerate(lines):
         if i:
             items = line.split('\t')
-            label = [0, 1] if int(items[0]) else [1, 0]
-            data.append([label, items[3], items[4]])
+            label = [0, 1] if int(items[1]) else [1, 0]
+            data.append([label, items[0]])
     return data
 
 
 if __name__ == '__main__':
-    train_data = read_model_data(TEST_FILE)
+    train_data = read_model_data(DEV_FILE)
     print(len(train_data))
     for _ in train_data:
         print(_)

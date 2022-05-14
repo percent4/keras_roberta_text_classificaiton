@@ -25,9 +25,9 @@ model.load_weights('mrpc.h5')
 
 
 # 对单句话进行预测
-def predict_single_text(text1, text2):
+def predict_single_text(text):
     # 利用BERT进行tokenize
-    x1, x2 = tokenizer_encode(tokenizer, text1, text2, MAX_SEQ_LENGTH)
+    x1, x2 = tokenizer_encode(tokenizer, text, MAX_SEQ_LENGTH)
     # 模型预测并输出预测结果
     predicted = model.predict([[x1], [x2]])
     y = np.argmax(predicted[0])
@@ -36,12 +36,12 @@ def predict_single_text(text1, text2):
 
 # 模型评估
 def evaluate():
-    test_data = read_model_data(TEST_FILE)
+    test_data = read_model_data(DEV_FILE)
     true_y_list, pred_y_list = [], []
     for i, data in enumerate(test_data):
         print("predict %d samples" % (i+1))
-        true_y, text1, text2 = data
-        pred_y = predict_single_text(text1, text2)
+        true_y, text = data
+        pred_y = predict_single_text(text)
         true_y_list.append(true_y)
         pred_y_list.append(pred_y)
 

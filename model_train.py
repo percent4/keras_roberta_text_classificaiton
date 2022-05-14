@@ -35,8 +35,8 @@ class DataGenerator:
             np.random.shuffle(idxs)
             X1, X2, Y = [], [], []
             for i in idxs:
-                y, text1, text2 = self.data[i]
-                x1, x2 = tokenizer_encode(tokenizer=tokenizer, text1=text1, text2=text2, max_seq_length=MAX_SEQ_LENGTH)
+                y, text = self.data[i]
+                x1, x2 = tokenizer_encode(tokenizer=tokenizer, text=text, max_seq_length=MAX_SEQ_LENGTH)
                 X1.append(x1)
                 X2.append(x2)
                 Y.append(y)

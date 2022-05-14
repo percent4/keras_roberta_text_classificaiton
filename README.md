@@ -25,3 +25,14 @@ python tf_roberta_demo.py
     --tf_roberta_path /path/to/converted/roberta
     --tf_ckpt_name your_mode_name
 ```
+
+### train text classification model on MRPC dataset
+
+model training, see: `model_train.py`
+
+model evaluate on test data, see `model_evaluate.py`
+
+| params                                      | accuracy | F1  |
+|---------------------------------------------|----------|-----|
+| epoch:10, batch_size:16, max_seq_length:128 |||
+| epoch:10, batch_size:16, max_seq_length:256 |||
