@@ -41,7 +41,7 @@ class DataGenerator:
                 X2.append(x2)
                 Y.append(y)
                 if len(X1) == self.batch_size or i == idxs[-1]:
-                    yield [X1, X2], Y
+                    yield [np.array(X1), np.array(X2)], np.array(Y)
                     [X1, X2, Y] = [], [], []
 
 

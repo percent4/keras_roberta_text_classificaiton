@@ -15,7 +15,8 @@ def read_model_data(file_path):
     for i, line in enumerate(lines):
         if i:
             items = line.split('\t')
-            data.append([int(items[0]), items[3], items[4]])
+            label = [0, 1] if int(items[0]) else [1, 0]
+            data.append([label, items[3], items[4]])
     return data
 
 
