@@ -29,5 +29,8 @@ def predict_single_text(text):
 
 
 if __name__ == '__main__':
-    review_text = 'Awesome movie for everyone to watch. Animation was flawless.'
+    review_text = 'I almost balled my eyes out 5 times. Almost. Beautiful movie, very inspiring.'
+    predict_single_text(review_text)
+    review_text = "I felt a bit let down by this movie, probably because it was over-hyped. " \
+                  "Visually it was very true to the graphic novel flavor, and the story wasn't bad."
     predict_single_text(review_text)
