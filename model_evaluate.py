@@ -21,7 +21,7 @@ tokenizer = RobertaTokenizer(GPT_BPE_VOCAB, GPT_BPE_MERGE, ROBERTA_DICT)
 
 # 加载训练好的模型
 model = create_cls_model()
-model.load_weights('mrpc.h5')
+model.load_weights('sst2.h5')
 
 
 # 对单句话进行预测
@@ -41,6 +41,7 @@ def evaluate():
     for i, data in enumerate(test_data):
         print("predict %d samples" % (i+1))
         true_y, text = data
+        true_y = 1 if true_y == [0, 1] else 0
         pred_y = predict_single_text(text)
         true_y_list.append(true_y)
         pred_y_list.append(pred_y)

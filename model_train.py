@@ -88,4 +88,4 @@ if __name__ == '__main__':
         validation_steps=len(test_D)
     )
 
-    model.save_weights('mrpc.h5')
+    model.save_weights('sst2.h5')
