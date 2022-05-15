@@ -31,6 +31,6 @@ def predict_single_text(text):
 if __name__ == '__main__':
     review_text = 'I almost balled my eyes out 5 times. Almost. Beautiful movie, very inspiring.'
     predict_single_text(review_text)
-    review_text = "I felt a bit let down by this movie, probably because it was over-hyped. " \
-                  "Visually it was very true to the graphic novel flavor, and the story wasn't bad."
+    review_text = "Not even worth it. It's a movie that's too obscene for kids, too stupid for adults, " \
+                  "and too crappy for everyone. Skip if you're not 13, or even if you are."
     predict_single_text(review_text)
