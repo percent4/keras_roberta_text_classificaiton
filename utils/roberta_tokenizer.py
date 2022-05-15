@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # @Time : 2022/5/14 11:41
 # @Author : Jclian91
-# @File : robeberta_tokernizer.py
+# @File : roberta_tokenizer.py
 # @Place : Minghang, Shanghai
 
 

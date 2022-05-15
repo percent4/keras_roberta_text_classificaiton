@@ -23,7 +23,6 @@ GPT_BPE_MERGE = os.path.join(vocab_path, 'vocab.bpe')
 ROBERTA_DICT = os.path.join(roberta_path, 'dict.txt')
 
 # 模型参数配置
-EPOCH = 10
-BATCH_SIZE = 16
-MAX_SEQ_LENGTH = 128
-WARMUP_RATION = 0.1
+EPOCH = 10              # 训练轮次
+BATCH_SIZE = 64         # 批次数量
+MAX_SEQ_LENGTH = 80     # 最大长度

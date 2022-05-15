@@ -12,7 +12,7 @@ from utils.params import *
 from utils.load_data import read_model_data
 from keras_roberta.roberta import build_bert_model
 from keras_roberta.tokenizer import RobertaTokenizer
-from utils.robeberta_tokernizer import tokenizer_encode
+from utils.roberta_tokenizer import tokenizer_encode
 
 tokenizer = RobertaTokenizer(GPT_BPE_VOCAB, GPT_BPE_MERGE, ROBERTA_DICT)
 
